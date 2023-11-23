@@ -22,51 +22,39 @@ public class MainActivity2 extends AppCompatActivity {
         TextView textCity = findViewById(R.id.textCity);
         TextView textState = findViewById(R.id.textState);
         TextView textPincode = findViewById(R.id.textPincode);
-        TextView textConatctNo = findViewById(R.id.textConatctNo);
-        TextView textSkill = findViewById(R.id.textSkill);
+        TextView textContactNo = findViewById(R.id.textContactNo);
+
 
         // Retrieve data from the intent
         Intent intent = getIntent();
         String firstName = intent.getStringExtra("FirstName");
         String lastName = intent.getStringExtra("LastName");
         String email = intent.getStringExtra("Email");
-        String dob = intent.getStringExtra("DOB");
-        boolean isMale = intent.getBooleanExtra("IsMale", false);
-        boolean isFemale = intent.getBooleanExtra("IsFemale", false);
-        String gender = isMale ? "Male" : (isFemale ? "Female" : "N/A");
+        String dob = intent.getStringExtra("Date Of Birth");
+        String gender = intent.getStringExtra("Gender");
+        boolean isMale = gender.equals("Male");
+        boolean isFemale = gender.equals("Female");
         String buildingNo = intent.getStringExtra("BuildingNo");
         String street = intent.getStringExtra("Street");
         String city = intent.getStringExtra("City");
         String state = intent.getStringExtra("State");
         String pincode = intent.getStringExtra("PinCode");
         String contactNo = intent.getStringExtra("ContactNo");
-        boolean knowsHTML = intent.getBooleanExtra("KnowsHTML", false);
-        boolean knowsCSS = intent.getBooleanExtra("KnowsCSS", false);
-        boolean knowsJS = intent.getBooleanExtra("KnowsJS", false);
-        textFirstName.setText("FirstName: " + firstName);
+//        boolean knowsHTML = intent.getBooleanExtra("KnowsHTML", false);
+//        boolean knowsCSS = intent.getBooleanExtra("KnowsCSS", false);
+//        boolean knowsJS = intent.getBooleanExtra("KnowsJS", false);
+
         // Set the retrieved data in the TextViews
         textFirstName.setText(firstName);
         textLastName.setText(lastName);
         textEmail.setText(email);
         textDOB.setText(dob);
-        textGender.setText(gender);
+        textGender.setText(isMale ? "Male" : (isFemale ? "Female" : "N/A"));
         textBuildingNo.setText(buildingNo);
         textStreet.setText(street);
         textCity.setText(city);
         textState.setText(state);
         textPincode.setText(pincode);
-        textConatctNo.setText(contactNo);
-
-        String skills = "";
-        if (knowsHTML) {
-            skills += "HTML, ";
-        }
-        if (knowsCSS) {
-            skills += "CSS, ";
-        }
-        if (knowsJS) {
-            skills += "JavaScript";
-        }
-        textSkill.setText(skills);
+        textContactNo.setText(contactNo);
     }
 }

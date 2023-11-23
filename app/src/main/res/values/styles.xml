@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    </style>
+</resources>
+
+<!--It includes attributes such as colors, text sizes, font families
+and other visual properties that are applied globally to UI elements in your app.-->
+<!--<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--<item name="colorPrimary">@color/primaryColor</item>-->
+<!--<item name="colorAccent">@color/accentColor</item>-->
+<!--<item name="android:textSize">16sp</item>-->
+<!--</style>-->

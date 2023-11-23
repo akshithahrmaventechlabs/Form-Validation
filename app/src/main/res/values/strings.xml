@@ -2,4 +2,10 @@
     <string name="app_name">Form Validation</string>
     <string name="Required" />
     <string name="required">Required</string>
+
+    <style name="HeadingTextStyle">
+        <item name="android:textColor">#0000FF</item>
+    </style>
+
+    <string name="preview_text">Preview of User Information</string>
 </resources>

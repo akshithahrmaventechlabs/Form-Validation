@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#3F51B5</color>
+    <color name="primarydarkcolor">#303F9F</color>
+    <color name="accentColor">#FF4081</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="passwordToggleTint">#000000</color>
+    <color name="green">#00FF00</color>
+    <!-- Add more custom colors as needed -->
 </resources>
+
+
+    <!--    It centralizes color definitions, making it easier to manage and
+     update the color scheme of your app.-->
+<!--<color name="primaryColor">#2196F3</color>-->
+<!--<color name="accentColor">#FF4081</color>-->
+<!--    The primary color is like the main color theme of-->
+<!--    your app. It sets the overall tone and is often used for key-->
+<!--    elements such as the app bar, headers, and other primary UI components.-->
